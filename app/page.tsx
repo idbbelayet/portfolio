@@ -13,7 +13,7 @@ export default function Home() {
           priority
         />
 
-        <h1>Mohammad Belayet Hossain</h1>
+        <h1 className="text-3xl font-bold">Mohammad Belayet Hossain</h1>
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
         <a
