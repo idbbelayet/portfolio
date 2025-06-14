@@ -1,6 +1,7 @@
+import JsonCrudExample from "@/app/JsonCrudExample";
 import Image from "next/image";
 
-export default function Home() {
+export default function HomePage() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
@@ -10,58 +11,11 @@ export default function Home() {
           alt="Next.js logo"
           width={180}
           height={38}
-          priority
         />
 
         <h1 className="text-3xl font-bold">Mohammad Belayet Hossain</h1>
+        <JsonCrudExample />
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="#"
-          target="_self"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/portfolio/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="#"
-          target="_self"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/portfolio/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="#"
-          target="_self"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/portfolio/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
     </div>
   );
 }
