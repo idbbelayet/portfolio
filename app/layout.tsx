@@ -1,7 +1,7 @@
 import Navbar from "@/components/Navbar";
 import type { Metadata } from "next";
-import "./globals.css";
 import { Lato } from "next/font/google";
+import "./globals.css";
 
 const lato = Lato({
   subsets: ["latin"],
@@ -9,7 +9,6 @@ const lato = Lato({
   variable: "--font-lato", // Optional: custom CSS variable
   display: "swap",
 });
- 
 
 export const metadata: Metadata = {
   title: "Belayet",
@@ -23,9 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${lato.className} antialiased`}>
+      <body className={`${lato.className} antialiased container px-5 mx-auto`}>
         <Navbar />
-        {children}
+        <main className="mx-auto">{children}</main>
       </body>
     </html>
   );
