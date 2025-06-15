@@ -1,5 +1,5 @@
 import { buttonVariants } from "@/components/ui/button";
-import { GithubIcon, Linkedin } from "lucide-react";
+import { Download, GithubIcon, Linkedin, Mail } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -22,12 +22,10 @@ export default function HomePage() {
         <div className="flex items-center justify-around space-x-3">
           <a
             href={"/portfolio/ResumeOfBelayetHossain.pdf"}
-            className={
-              buttonVariants({ variant: "outline" }) +
-              " rounded-full border-gray-600"
-            }
+            className={buttonVariants({ variant: "outline" }) + " rounded-full"}
             download={"download"}
           >
+            <Download />
             Download CV
           </a>
 
@@ -35,6 +33,7 @@ export default function HomePage() {
             href={"/contact"}
             className={`${buttonVariants({ variant: "default" })} rounded-full`}
           >
+            <Mail />
             Contact Info
           </Link>
         </div>
