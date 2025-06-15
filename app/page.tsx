@@ -13,7 +13,7 @@ export default function HomePage() {
         height={300}
       />
       <div className="flex flex-col items-center justify-start gap-4">
-        <div className="text-xl font-semibold">Hello, I'm</div>
+        <p className="text-xl font-semibold">Hello, I am</p>
         <h1 className="text-3xl font-bold">Belayet Hossain</h1>
         <div className="text-2xl font-bold text-gray-600">
           Full-Stack .Net Developer
