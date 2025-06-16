@@ -13,6 +13,7 @@ export default function HomePage() {
           alt="Next.js logo"
           width={200}
           height={200}
+          priority
         />
       </div>
 
