@@ -1,4 +1,4 @@
-import { Award, Users } from "lucide-react";
+import { Award, GraduationCap } from "lucide-react";
 
 function AboutPage() {
   return (
@@ -18,7 +18,7 @@ function AboutPage() {
               <div>API Development</div>
             </div>
             <div className="w-1/2 flex flex-col items-center border border-gray-300 gap-2 p-6 rounded-xl">
-              <Users />
+              <GraduationCap />
               <div className="font-bold">Education</div>
 
               <div>Advanced Certificate for Management Professionals</div>
@@ -30,7 +30,9 @@ function AboutPage() {
               <div>Bachelor of Business Studies</div>
             </div>
           </div>
-          <div className="">
+          <div
+            className="flex flex-col gap-2  border border-gray-300  p-6 rounded-xl"
+          >
             <p>
               I am a Microsoft Certified ASP.NET Core & C# Developer with a
               strong background in web development and software architecture. I
@@ -46,9 +48,7 @@ function AboutPage() {
               software delivery.
             </p>
             <p>
-              I am always eager to learn, collaborate, and innovate. Let’s
-              connect to discuss ASP.NET, Software Architecture, or cutting-edge
-              web technologies!
+              I am always eager to learn, collaborate, and innovate.
             </p>
           </div>
         </div>

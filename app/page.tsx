@@ -5,18 +5,23 @@ import Link from "next/link";
 
 export default function HomePage() {
   return (
-    <main className="flex flex-wrap items-center justify-center h-[90vh] w-full gap-12">
-      <Image
-        className="rounded-full"
-        src="/portfolio/belayet.jpeg"
-        alt="Next.js logo"
-        width={200}
-        height={200}
-      />
+    <div className="flex flex-wrap items-center justify-center h-[50vh] sm:h-[90vh] w-full gap-12">
+      <div>
+        <Image
+          className="rounded-full"
+          src="/portfolio/belayet.jpeg"
+          alt="Next.js logo"
+          width={200}
+          height={200}
+        />
+      </div>
+
       <div className="flex flex-col items-center justify-center gap-4">
-        <p className="text-xl font-semibold">Hello, I am</p>
-        <h1 className="text-3xl font-bold">Mohammad Belayet Hossain</h1>
-        <div className="text-2xl font-bold text-gray-600">
+        <p className="text-lg sm:text-xl font-semibold">Hello, I am</p>
+        <h1 className="text-lg md:text-xl xl:text-3xl font-bold">
+          Mohammad Belayet Hossain
+        </h1>
+        <div className="text-base md:text-lg xl:text-2xl font-bold text-gray-600">
           Full-Stack .Net Developer
         </div>
         <div className="flex items-center justify-around space-x-3">
@@ -62,6 +67,6 @@ export default function HomePage() {
           </Link>
         </div>
       </div>
-    </main>
+    </div>
   );
 }
