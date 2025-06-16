@@ -6,7 +6,7 @@ function Navbar() {
     <div className="container px-2 py-4 mx-auto flex flex-wrap items-center justify-between">
       <Link
         href="/"
-        className="text-xl font-semibold px-2 rounded bg-gradient-to-r from-teal-950 via-teal-800 to-teal-700"
+        className="text-xl font-semibold px-2 rounded bg-gradient-to-r from-green-950 via-green-800 to-green-700"
       >
         <span className="text-gray-200">
           <span className="text-white">B</span>elayet
